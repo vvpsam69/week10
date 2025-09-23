@@ -1,0 +1,7 @@
+package com.example.mongo1.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import com.example.mongo1.entity.Book;
+
+public interface BookRepo extends MongoRepository<Book, Integer> {
+}
