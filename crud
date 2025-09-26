@@ -1,0 +1,31 @@
+show dbs
+
+use fsd
+
+db.student.insertOne({name:"aaa",age:10,course:"cs"})
+
+show collections
+
+db.student.find()
+
+db.student.insertMany([{name:"abc",age:12,course:"cs"},{name:"xyz",age:14,course:"me"},{name:"asd",age:18,course:"ec"}])
+
+db.student.find()
+
+db.student.findOne({name:"xyz"}) 
+
+db.student.updateOne({name:"xyz"},{$set:{age:48}}) 
+
+db.student.find()
+
+db.student.deleteOne({name:"xyz"})
+
+db.student.find() 
+
+db.student.updateOne({name:"asd"},{$set:{age:55}})
+
+db.student.find()
+
+db.student.deleteOne({name:"abc"})
+
+db.student.find()
